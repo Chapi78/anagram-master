@@ -20,7 +20,7 @@ class anagram{
     }
 
     public function word_init($mot) { 
-        echo "word_init\n";
+        // echo "word_init\n";
         $alphabet = [
             'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
         ];
@@ -31,7 +31,7 @@ class anagram{
             $outLen = strlen($mot);
             if($initiaLen > $outLen) {
                 $iterate = $initiaLen - $outLen;
-                echo "lettre touver: ". $cara . "\n iteration: ". $iterate. "\n";
+                // echo "lettre touver: ". $cara . "\n iteration: ". $iterate. "\n";
                 $this->word_count($cara, $iterate);
             }
         }
